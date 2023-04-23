@@ -1,0 +1,410 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: linear-gradient(to right, #B50D13, #F0A81A, #e9cf10, #2D9CCE);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 5%;
+  }
+  nav .logo img{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 120px;
+    width: 250px;
+  }
+  nav ul{                              /*Tab 1*/
+    display: flex;
+    list-style: none;
+    margin-left: 100px;
+  }
+  nav ul li{
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ff5a73;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+  nav .navLinks button{             /*Login button*/
+    padding: 2px 20px;
+    border-radius: 10px;
+    color: rgb(198, 80, 141);
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+    margin-left: 100px; 
+  }
+  nav ul li:hover{
+    background-color: rgb(193, 50, 122);
+  }
+  nav .menubtn{
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+  }
+   
+  /* responsive navbar css */
+  @media screen and (max-width: 600px) {
+    nav .menubtn{
+      display: flex;
+    }
+    nav .navLinks{
+      display: none;
+    }
+    .sideNav {
+      display: block !important;
+    }
+  }
+   
+  .sideNav{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: rgb(44, 1, 197);
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    padding-top: 60px;
+    display: none;
+  }
+   
+  .sideNav a{
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    color: #d1d1d1;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  .sideNav a button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: blue;
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+  }
+  .sideNav a:hover{
+    color: white;
+  }
+  .sideNav .closeBtn{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+   
+  .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+  }
+  .row .column1 {
+    padding-right: 250px;
+  }
+  .column1 h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  .column1 h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .column1 p {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .column1 button {
+    width: 150px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border-style: none;
+    color: rgb(198, 80, 141);
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .heading {
+    text-align: center;
+    margin-top: 80px;
+  }
+  .heading h1{
+    font-size: 50px;
+  }
+  .heading p{
+    font-size: 30px;
+  }
+
+                                 /* Features Description*/
+  .containerRight {
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+    margin-top: 20px;
+  }
+  
+  .photo {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 50px;
+    width: 500px;
+    height: 600px;
+  }
+  
+  .text {
+    width: 50%;
+    padding: 0 20px;
+  }
+
+  button {
+    padding: 2px 20px;
+    border-radius: 10px;
+    color: rgb(198, 80, 141);
+    font-size: 22px;
+    border-style: none;
+    font-weight: 700;
+    margin-left: 100px;
+    }
+  
+  h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    right: 80px;
+  }
+  
+  p {
+    font-size: 25px;
+    line-height: 1.5;
+    right: 80px;
+  }
+
+  .containerLeft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 150px;
+    margin-top: 20px;
+  }
+  
+  .text {
+    width: 50%;
+    padding: 0 20px;
+    padding-left: 150px;
+  }
+
+  button {
+    padding: 2px 20px;
+    border-radius: 10px;
+    color: rgb(198, 80, 141);
+    font-size: 22px;
+    border-style: none;
+    font-weight: 700;
+    margin-left: 100px;
+  }
+
+  Img {
+    width: 500px;
+    height: 600px;
+  }
+  
+  h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    right: 80px;
+  }
+  
+  p {
+    font-size: 25px;
+    line-height: 1.5;
+    right: 80px;
+  }
+
+                                         /* Carousel */
+   /* Slideshow container */
+   .slideshow-container {
+     max-width: 1000px;
+     max-height: 800px;
+     position: relative;
+     margin: auto;
+     top: 60px;
+     box-align: center;
+   }
+   
+   /* Hide the images by default */
+   .mySlides1 {
+     display: none;
+   }
+   .mySlides2 {
+    display: none;
+  }
+  .mySlides3 {
+    display: none;
+  }
+   
+   /* Next & previous buttons */
+   .prev, .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     margin-top: -22px;
+     padding: 16px;
+     color: white;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+     user-select: none;
+   }
+   
+   /* Position the "next button" to the right */
+   .next {
+     right: 0;
+     border-radius: 3px 0 0 3px;
+   }
+   
+   /* On hover, add a black background color with a little bit see-through */
+   .prev:hover, .next:hover {
+     background-color: rgba(0,0,0,0.8);
+   }
+   
+   /* Caption text */
+   .textslide {
+     color: black;
+     font-size: 35px;
+     padding: 8px 12px;
+     position: absolute;
+     bottom: 8px;
+     width: 100%;
+     text-align: center;
+   }
+   
+   /* Number text (1/3 etc) */
+   .numbertext {
+     color: #000000;
+     font-size: 12px;
+     padding: 8px 12px;
+     position: absolute;
+     top: 0;
+   }
+   
+   /* Fading animation */
+   .fade {
+     animation-name: fade;
+     animation-duration: 1.5s;
+   }
+   
+   .background {
+    background-color: rgba(128, 128, 128, 0.762);
+    background-blend-mode: darken;
+    background-size: cover;
+    margin-top: 45px;
+   }
+   .footer {
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+   }
+
+   @keyframes fade {
+     from {opacity: .4}
+     to {opacity: 1}
+   }
+
+   @-webkit-keyframes fade {
+     from {opacity: .5}
+     to {opacity: 2}
+   }
+   
+   @keyframes fade {
+     from {opacity: .5}
+     to {opacity: 2}
+   }
+  /* Header content responsive */
+  @media screen and (max-width: 980px) {
+    .column2 img {
+      width: 350px;
+    }
+    .column1 h1 {
+      font-size: 40px;
+    }
+    .column1 p{
+      font-size: 17px;
+    }
+    .row {
+      margin-top: 80px;
+    }
+  }
+   
+  @media screen and (max-width: 600px) {
+   
+    .column1 h1 {
+      font-size: 35px;
+    }
+    .row {
+      flex-direction: column;
+   
+    }
+    .row .column1 {
+      padding: 30px;
+    }
+  }
