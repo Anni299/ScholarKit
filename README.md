@@ -1,5 +1,4 @@
 # ScholarKit
-# Simplify Your Studies With Our Tools
 
 ScholarKit is an educational tool website designed to help students stay organized, study efficiently, and excel in their academic pursuits. With a plethora of features such as daily planner, flashcards, quizzes, notes, and more, ScholarKit is a one-stop solution for all your study needs.
 
