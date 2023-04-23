@@ -14,3 +14,8 @@ And two special features...
 •	  *Random Quote Generator*: To get some words of wisdom and keep yourself motivated
 •	  *Random Fact Generator*: To help you increase your knowledge about some behind-the-scenes facts about the movie 'Back to the Future'
 
+**Purpose**
+The purpose of ScholarKit is to provide a wide range of features at one place so that students don't have to waste their time to search for such features one-by-one. The idea for this website is derived to be a solution to the problems I have faced myself during the course of my studies.
+
+**Technologies Used**
+The website was made by using the programming languages HTML, CSS and JavaScript.
